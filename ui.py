@@ -108,9 +108,9 @@ class ImageSelectorApp(QMainWindow):
         end_time = time.time()
         elapsed_time = end_time - start_time
         if A[0][1] < A[0][0]:
-            self.textLabel.setText(f"Ảnh thật, thời gian dự đoán {elapsed_time:.4f}")
-        else:
             self.textLabel.setText(f"Ảnh giả mạo, thời gian dự đoán {elapsed_time:.4f}")
+        else:
+            self.textLabel.setText(f"Ảnh thật, thời gian dự đoán {elapsed_time:.4f}")
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
