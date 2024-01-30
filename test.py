@@ -4,7 +4,7 @@ from tensorflow import _tf_uses_legacy_keras
 import numpy as np
 saved_model = _tf_uses_legacy_keras.models.load_model("model_best_98.h5")
 
-path =  './Casia_database/Tp_Test/Tp_Test/'
+path =  'Tp_Test/Tp_Test/'
 B=[]
 j=0
 m=0
@@ -22,7 +22,7 @@ for dirname, _, filenames in os.walk(path):
                 m=m+1
 print(m)
 
-path =  './Casia_database/Au_Test/Au_Test/'
+path =  'Au_Test/Au_Test/'
 B=[]
 j=0
 k=0
